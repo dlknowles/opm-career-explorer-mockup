@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JET Results</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/uswds/css/styles.css" />
+    <script defer src="assets/uswds/js/uswds.min.js"></script>
+</head>
+
+<body>
+    <div class="mockup-menu">
+        <button class="usa-button usa-button--base" id="menuToggle">
+            <svg class="usa-icon icon-01" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="assets/uswds/img/sprite.svg#menu"></use>
+            </svg>
+        </button>
+        <ul class="usa-list usa-list--unstyled mockup-nav hidden">
+            <li><a class="usa-link" href="intro.html">Intro</a></li>
+            <li><a class="usa-link" href="quiz.html">Quiz</a></li>
+            <li><a class="usa-link" href="results.html">Results</a></li>
+        </ul>
+    </div>
+    {{> header }}
+    <main id="main">
+        <section class="vh-80 top-results dark overlay">
+            <div>
+                <div class="grid-container top-series-container">
+                    <div class="grid-row grid-gap">
+                        <div class="tablet-lg:grid-col results-intro">
+                            <h1 class="text-5xl">Your results are in!</h1>
+                            <div class="text-xl icon-item">
+                                <svg class="usa-icon icon-04" aria-hidden="true" focusable="false" role="img">
+                                    <use xlink:href="assets/uswds/img/sprite.svg#explore"></use>
+                                </svg>
+                                <span>Here are your top <a href="#faq-series" class="helper-link" aria-controls="faq-series" data-open-modal>job series</a> matches.</span>
+                            </div>
+                        </div>
+                        <div class="tablet-lg:grid-col">
+                            <ul class="usa-list usa-list--unstyled top-series-list" id="top-series-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="results-faqs-section">
+            <div class="grid-container">
+                
+                <div class="faq-accordion">
+                    <div class="usa-accordion" id="faq-accordion">
+                        <span class="usa-accordion__heading">
+                            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq-content" id="faq-accordion-button">Frequently Asked Questions</button>
+                        </span>
+                        <div id="faq-content" class="usa-accordion__content usa-prose" hidden>
+                            <ul class="usa-list usa-list--unstyled results-faqs">
+                                <li>
+                                    <a href="#faq-series" class="usa-link helper-link text-xl" aria-controls="faq-series" data-open-modal>What's a job series?</a>
+                                </li>
+                                <li>
+                                    <a href="#faq-match" class="usa-link helper-link text-xl" aria-controls="faq-match" data-open-modal>How did you find my match?</a>
+                                </li>
+                                <li>
+                                    <a href="#save-my-results" class="usa-link helper-link text-xl" aria-controls="save-my-results" data-open-modal>Can I save my results?</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-full">
+                    <ul class="usa-list usa-list--unstyled results-faqs">
+                        <li>
+                            <a href="#faq-series" class="usa-link helper-link text-xl" aria-controls="faq-series" data-open-modal>What's a job series?</a>
+                        </li>
+                        <li>
+                            <a href="#faq-match" class="usa-link helper-link text-xl" aria-controls="faq-match" data-open-modal>How did you find my match?</a>
+                        </li>
+                        <li>
+                            <a href="#save-my-results" class="usa-link helper-link text-xl" aria-controls="save-my-results" data-open-modal>Can I save my results?</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        {{!-- <section class="results-faqs-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col">
+                        <ul class="usa-list usa-list--unstyled results-faqs">
+                            <li>
+                                <a href="#faq-series" class="usa-link helper-link text-xl" aria-controls="faq-series" data-open-modal>What's a job series?</a>
+                            </li>
+                            <li>
+                                <a href="#faq-match" class="usa-link helper-link text-xl" aria-controls="faq-match" data-open-modal>How did you find my match?</a>
+                            </li>
+                            <li>
+                                <a href="#save-my-results" class="usa-link helper-link text-xl" aria-controls="save-my-results" data-open-modal>Can I save my results?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> --}}
+        <section>
+            <div id="data"></div>
+        </section>
+        <section class="load-more-section">
+            <button id="load-more" class="usa-button usa-button--outline load-more-button text-xl">Load more results</button>
+        </section>
+        <section class="restart-quiz dark overlay">
+            <div class="grid-container">
+                <div class="grid-row grid-gap">
+                    <div class="desktop:grid-col-6 tablet:grid-col-8">
+                        <p class="text-2xl margin-bottom-6">
+                            Do you want to know how changing your answers will give you different results?
+                        </p>
+                        <div class="button-group">
+                            <a href="quiz.html" class="usa-button usa-button--outline text-xl usa-button--inverse">Retake the quiz</a>
+                            <a href="quiz.html" class="usa-button usa-button--outline text-xl usa-button--inverse">Change your answers</a>
+                        </div>
+                        {{!-- <p class="text-2xl"><a href="quiz.html" class="usa-button usa-button--outline text-xl usa-button--inverse">Retake the quiz</a> or <a href="quiz.html" class="usa-button usa-button--outline text-xl usa-button--inverse">change your answers</a>.</p> --}}
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        {{!-- <section class="bottom-section bg-grad restart-quiz-section">
+            <div class="usa-button-group buttons-center">
+                <a href="quiz.html" class="usa-button usa-button--outline text-xl">Retake the quiz</a>
+                <a href="quiz.html" class="usa-button usa-button--outline text-xl">Change your answers</a>
+            </div>
+        </section> --}}
+        {{> feedback-form-long }}
+    </main>
+    {{> footer }}
+
+    <div class="usa-modal" id="faq-series" aria-labelledby="modal-1-heading" aria-describedby="modal-1-description">
+        <div class="usa-modal__content usa-prose">
+            <div class="usa-modal__main">
+                <h2 id="modal-1-heading">
+                    What's a job series?
+                </h2>
+                <p id="modal-1-description">
+                    The federal government categorizes jobs into groups or families called a series. The series is a four-digit numbering system for organizing similar jobs. Related jobs will have series numbers that are closer together.
+                </p>
+                <p>
+                    For example, medical, dental and public health jobs are between 0600-0699. Nursing jobs are in the 0610 series and nursing assistant jobs are in the 0621 series.
+                </p>
+                <h3>Which job series are included in the quiz?</h3>
+                <p>
+                    The USAJOBS Career Explorer can match you with <strong>over 300 job series</strong> in the federal government.
+                </p>
+                <div class="usa-modal__footer">
+                </div>
+            </div>
+            <button type="button" class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="assets/uswds/img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="usa-modal" id="faq-match" aria-labelledby="modal-2-heading" aria-describedby="modal-2-description">
+        <div class="usa-modal__content usa-prose">
+            <div class="usa-modal__main">
+                <h2 id="modal-2-heading">
+                    How did you find my match?
+                </h2>
+                <p id="modal-2-description">
+                    The USAJOBS Career Explorer uses a unique approach to finding job matches for you <strong>based on your interests</strong>. Unlike most job match assessment tools which match you based on skills, competencies, eligibilities, education level, or background, this aims to help you discover many different jobs which align purely with your interests.
+                </p>
+                <h3>Why interest-based matching?</h3>
+                <p>
+                    Experts believe that interest is the cornerstone of a fulfilling career. When you are genuinely interested in your job, it not only leads to greater job satisfaction but also to long-term career success.
+                </p>
+                <h3>How does the USAJOBS Career Explorer work?</h3>
+                <p>
+                    Each question talks about broad activities that many jobs could include. We take your answers and correlate that with job series that you might be interested in.
+                </p>
+                <div class="usa-modal__footer">
+                    {{!-- <ul class="usa-button-group">
+                        <li class="usa-button-group__item">
+                            <button type="button" class="usa-button usa-button--unstyled padding-105 text-center" data-close-modal>
+                                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                    <use xlink:href="assets/uswds/img/sprite.svg#help"></use>
+                                </svg> Learn more from our Help Center
+                            </button>
+                        </li>
+                    </ul> --}}
+                </div>
+            </div>
+            <button type="button" class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="assets/uswds/img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="usa-modal" id="save-my-results" aria-labelledby="modal-3-heading" aria-describedby="modal-3-description">
+        <div class="usa-modal__content usa-prose">
+            <div class="usa-modal__main">
+                <h2 id="modal-3-heading">
+                    Can I save my results?
+                </h2>
+                <p id="modal-3-description">
+                    You can copy this URL and save or bookmark it to view your results later.
+                </p>
+                <label class="usa-label sr-only" for="urlField">This page URL</label>
+                <input class="usa-input input-readonly margin-bottom-3" id="urlField" name="urlField" readonly value="" />
+            </div>
+            <button type="button" class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="assets/uswds/img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

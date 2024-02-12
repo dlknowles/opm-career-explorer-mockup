@@ -1,0 +1,30 @@
+/*
+----------------------------------------
+USWDS with settings overrides
+----------------------------------------
+Uncomment the following lines and add a list of changed settings
+in the form $setting: value,
+----------------------------------------
+*/
+
+@use "uswds-core" with (
+        $theme-show-notifications: false,
+        $theme-link-visited-color: "primary",
+        $theme-image-path: "../img",
+        $theme-banner-max-width: "desktop-lg",
+        $theme-grid-container-max-width: "desktop-lg",
+        $theme-column-gap-desktop: 6,
+        $theme-column-gap-sm: 4,
+        $theme-utility-breakpoints: (
+            "tablet-lg": true
+        ),
+        $theme-modal-default-max-width: "tablet",
+        $theme-color-accent-warm-family: "red",
+        $theme-color-accent-warm-lighter: "red-30",
+        $theme-color-accent-warm-light: "red-40",
+        $theme-color-accent-warm: "red-50",
+        $theme-color-accent-warm-dark: "red-60",
+        $theme-color-accent-warm-darker: "red-70",
+
+        //$theme-font-type-sans: "public-sans"
+    );

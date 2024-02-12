@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Start</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/uswds/css/styles.css" />
+    <script defer src="assets/uswds/js/uswds.min.js"></script>
+<script defer src="bundle.js"></script></head>
+
+<body>
+    <div class="mockup-menu">
+        <button class="usa-button usa-button--base" id="menuToggle">
+            <svg class="usa-icon icon-01" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="assets/uswds/img/sprite.svg#menu"></use>
+            </svg>
+        </button>
+        <ul class="usa-list usa-list--unstyled mockup-nav hidden">
+            <li><a class="usa-link" href="intro.html">Intro</a></li>
+            <li><a class="usa-link" href="quiz.html">Quiz</a></li>
+            <li><a class="usa-link" href="results.html">Results</a></li>
+            <hr>
+            <li><a class="usa-link" id="showDiv1"><em>Start quiz</em></a></li>
+            <li><a class="usa-link" id="showDiv2"><em>In Progress</em></a></li>
+            <li><a class="usa-link" id="showDiv3"><em>Quiz Complete</em></a></li>
+        </ul>
+    </div>
+    <header>
+        <section class="usa-banner" aria-label="Official website of the United States government">
+            <div class="usa-accordion">
+                <header class="usa-banner__header">
+                    <div class="usa-banner__inner">
+                        <div class="grid-col-auto">
+                            <img aria-hidden="true" class="usa-banner__header-flag" src="assets/uswds/img/us_flag_small.png" alt="" />
+                        </div>
+                        <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                            <p class="usa-banner__header-text">
+                                An official website of the United States government
+                            </p>
+                            <p class="usa-banner__header-action">Here’s how you know</p>
+                        </div>
+                        <button type="button" class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner-default-default">
+                            <span class="usa-banner__button-text">Here’s how you know</span>
+                        </button>
+                    </div>
+                </header>
+                <div class="usa-banner__content usa-accordion__content" id="gov-banner-default-default">
+                    <div class="grid-row grid-gap-lg">
+                        <div class="usa-banner__guidance tablet:grid-col-6">
+                            <img class="usa-banner__icon usa-media-block__img" src="assets/uswds/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true" />
+                            <div class="usa-media-block__body">
+                                <p>
+                                    <strong>Official websites use .gov</strong><br />A
+                                    <strong>.gov</strong> website belongs to an official government
+                                    organization in the United States.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="usa-banner__guidance tablet:grid-col-6">
+                            <img class="usa-banner__icon usa-media-block__img" src="assets/uswds/img/icon-https.svg" role="img" alt="" aria-hidden="true" />
+                            <div class="usa-media-block__body">
+                                <p>
+                                    <strong>Secure .gov websites use HTTPS</strong><br />A
+                                    <strong>lock</strong> (
+                                    <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-description-default" focusable="false">
+                                            <title id="banner-lock-title-default">Lock</title>
+                                            <desc id="banner-lock-description-default">Locked padlock icon</desc>
+                                            <path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
+                                        </svg> </span>) or <strong>https://</strong> means you’ve safely connected to
+                                    the .gov website. Share sensitive information only on official,
+                                    secure websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="header-mockup">
+            <div class="grid-container">
+                <div class="logo">
+                    <img src="assets/red-2x.svg" alt="">
+                </div>
+                <ul class="links usa-list usa-list--unstyled">
+                    <li><a class="usa-link" href="#">Sign in</a></li>
+                    <li><a class="usa-link" href="#">Help</a></li>
+                    <li><a class="usa-link" href="#">Search</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>    <main id="main">
+        <section class="vh-80 intro-page dark overlay">
+            <div>
+                <div class="grid-container intro">
+                    <div class="grid-row">
+                        <div class="desktop:grid-col-6 tablet:grid-col-8">
+                            <h1>Find your fit with the <span class="no-break">Career Explorer</span></h1>
+                            <ul class="usa-list usa-list--unstyled instructions icon-list text-xl">
+                                <li>
+                                    <svg class="usa-icon icon-01" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="assets/uswds/img/sprite.svg#interests"></use>
+                                    </svg>
+                                    <span>Get matched with careers in the federal government based on your interests.</span>
+                                </li>
+                                <li>
+                                    <svg class="usa-icon icon-02" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="assets/uswds/img/sprite.svg#task"></use>
+                                    </svg>
+                                    <span>Take a 32-question quiz that lasts 5–10 minutes.</span>
+                                </li>
+                                <li>
+                                    <svg class="usa-icon icon-03" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="assets/uswds/img/sprite.svg#psychology"></use>
+                                    </svg>
+                                    <span>Get your science-based results and explore new career opportunities.</span>
+                                </li>
+                            </ul>
+                            <div id="div1" class="grid-row grid-gap quiz-start-state">
+                                <div class="tablet:grid-col">
+                                    <div class="usa-button-group">
+                                        <a href="quiz.html" class="usa-button text-xl usa-button--accent-warm">Start the quiz</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="div2" class="grid-row grid-gap quiz-start-state">
+                                <div class="tablet:grid-col">
+                                    <p class="text-xl">You already have a quiz in progress.</p>
+                                    <div class="usa-button-group">
+                                        <a href="quiz.html" class="usa-button usa-button--outline usa-button--inverse usa-button--unstyled margin-right-2 text-xl">Restart the quiz</a>
+                                        <a href="quiz.html" class="usa-button usa-button--outline text-xl usa-button--inverse">Continue the quiz</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="div3" class="grid-row grid-gap quiz-start-state">
+                                <div class="tablet:grid-col">
+                                    <p class="text-xl">You've already completed the quiz.</p>
+                                    <div class="usa-button-group">
+                                        <a href="quiz.html" class="usa-button usa-button--outline usa-button--inverse usa-button--unstyled margin-right-2 text-xl">Restart the quiz</a>
+                                        <a href="results.html" class="usa-button usa-button--outline text-xl usa-button--inverse">Go to your results</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-mockup">
+        <div class="f1">
+            <div class="grid-container">
+                <a href="#main" class="usa-link">Return to top</a>
+            </div>
+        </div>
+        <div class="f2"></div>
+        <div class="f3"></div>
+    </footer></body>
+
+</html>

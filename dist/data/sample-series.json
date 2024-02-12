@@ -1,0 +1,191 @@
+{
+    "Series": [
+        {
+            "CodeName": "Food service worker (series 7408)",
+            "Code": "7408",
+            "JobTitles": [
+                "Food service worker",
+                "Barista",
+                "Child and youth program food service worker",
+                "Food service supervisor"
+            ],
+            "Description": "In this job series, you will serve food and drinks and prepare simple meals at government buildings and locations. You may help set tables, work at food counters, wash dishes and cutlery or move food and kitchen equipment. Food service workers also serve hospital patients and record or track patient diet and other information, as well as cleaning floors, walls and ceilings.",
+            "Match": 100
+        },
+        {
+            "CodeName": "Electrician (series 2805)",
+            "Code": "2805",
+            "JobTitles": [
+                "Electrician",
+                "Apprentice",
+                "Electrical worker supervisor",
+                "Production shop planner"
+            ],
+            "Description": "You will install, maintain, troubleshoot and repair electrical wiring systems, fixtures, controls and equipment in industrial, institutional, office or residential buildings or on ships. Working as an electrician requires that you understand and apply electrical principles, materials and safety standards.",
+            "Match": 100
+        },
+        {
+            "CodeName": "Education services (series 1740)",
+            "Code": "1740",
+            "JobTitles": [
+                "Guidance counselor",
+                "Education services specialist",
+                "Psychologist",
+                "Social worker"
+            ],
+            "Description": "You will manage, promote, conduct or evaluate programs that help people create career plans or develop their skills. A career in education services requires that you understand educational theories and practices for high school, adult or continuing education students. You may also help students set educational and career goals.",
+            "Match": 90
+        },
+        {
+            "CodeName": "Pharmacist (series 0660)",
+            "Code": "0660",
+            "JobTitles": [
+                "Pharmacist",
+                "Clinical pharmacist",
+                "Pharmacy supervisor",
+                "Program manager"
+            ],
+            "Description": "You will prepare and dispense medications prescribed by doctors and dentists, research new drugs and compounding techniques, advise patients on medication use and manage pharmacy programs. As a pharmacist, you may also evaluate new drug proposals and monitor the safety and effectiveness of existing drugs on the market.",
+            "Match": 90
+        },
+        {
+            "CodeName": "Language specialist (series 1040)",
+            "Code": "1040",
+            "JobTitles": [
+                "Translator",
+                "Interpreter",
+                "Linguist",
+                "Language analyst or specialist",
+                "Foreign service regional English language office"
+            ],
+            "Description": "In this job series, you will translate between a foreign language and English in writing or verbally. You may also administer, supervise and perform translations.",
+            "Match": 80
+        },
+        {
+            "CodeName": "Public utilities specialist (series 1130)",
+            "Code": "1130",
+            "JobTitles": [
+                "Public utilities specialist",
+                "Supervisory public utilities specialist",
+                "Public utilities specialist (metering)",
+                "Public utilities specialist (energy efficiency)"
+            ],
+            "Description": "You will analyze utility rate schedules, investigate and analyze public utilities' financial structure, and prepare information for regulatory organizations. Public utilities specialists may also help the government buy or sell utility resources and services. In this industry, you should understand public utilities like electric and gas power, water, steam or sewage disposal.",
+            "Match": 80
+        },
+        {
+            "CodeName": "Air traffic control (series 2152)",
+            "Code": "2152",
+            "JobTitles": [
+                "Air traffic control specialist",
+                "Supervisory air traffic control specialist",
+                "Traffic management coordinator",
+                "Support specialist",
+                "Flight data communications specialist",
+                "Operations supervisor"
+            ],
+            "Description": "In air traffic control, you will direct and control air traffic to make sure planes move safely and efficiently in airports and on route. You will provide pilots before and during flights with necessary information. You may also create and manage air traffic control programs. In this field, you should understand aircraft separation standards and control techniques and handle stressful situations well. This job series requires extensive knowledge of air traffic rules and regulations.",
+            "Match": 70
+        },
+        {
+            "CodeName": "Program management (series 0340)",
+            "Code": "0340",
+            "JobTitles": [
+                "Program manager",
+                "Supervisory program manager",
+                "Federal security director",
+                "Programs director",
+                "Deputy director"
+            ],
+            "Description": "You will manage or assist in managing programs and supporting service organizations. You should have strong management and executive skills but not expertise in a specific subject area. If a position does require expertise, it will be classified in another job series.",
+            "Match": 70
+        },
+        {
+            "CodeName": "Marine machinery mechanic (series 5334)",
+            "Code": "5334",
+            "JobTitles": [
+                "Marine machinery mechanic",
+                "Marine machinery mechanic leader or supervisor",
+                "Apprentice",
+                "Marine machinery repairer",
+                "Production shop planner"
+            ],
+            "Description": "You will repair and maintain marine machinery, equipment and systems like propulsion machinery, propellers, rudders, cargo handling machinery, lifeboat davits, anchor handling gear and missile tube equipment. This job series requires practical knowledge of the mechanical, hydraulic and pneumatic systems and components of submarines, ships and other floating craft. Marine mechanic work requires understanding how the machinery and equipment operate and function and the unique environmental conditions on marine vessels, like the lack of space between bulkheads and where equipment is located.",
+            "Match": 0
+        },
+        {
+            "CodeName": "Public health program specialist (series 0685)",
+            "Code": "0685",
+            "JobTitles": [
+                "Public health advisor",
+                "Public health analyst",
+                "Supervisory public health advisor",
+                "Director"
+            ],
+            "Description": "You will plan, manage and evaluate public health activities that may be partly financed by federal funds. In this job series, you may conduct studies and other strategic work that focuses on developing, organization and administrating public health programs. You also might assist state and local governments, as well as public, nonprofit and private organizations and businesses.",
+            "Match": 0
+        },
+        {
+            "CodeName": "Consumer safety (series 0696)",
+            "Code": "0696",
+            "JobTitles": [
+                "Consumer safety officer",
+                "Supervisory consumer safety officer",
+                "Public health training coordinator",
+                "Deputy director",
+                "Food technician"
+            ],
+            "Description": "You will enforce laws and regulations that protect people from harmful or dangerous products. In consumer safety, you will identify and evaluate hazardous substances, manufacturing and production practices, quality control systems, laboratory analyses and clinical investigation programs.",
+            "Match": 0
+        },
+        {
+            "CodeName": "Store working (series 6914)",
+            "Code": "6914",
+            "JobTitles": [
+                "Store worker",
+                "Store worker leader",
+                "Forklift operator",
+                "Motor vehicle operator"
+            ],
+            "Description": "You will work in a store, helping customers find and buy items they need. You should understand basic math, as well as how to track stock and match items on shelves to lists. You will learn what items your store carries and display them in a way that makes sense for customers. You should also know how to identify items for pricing and quality based on the type, kind or variety.",
+            "Match": 0
+        },
+        {
+            "CodeName": "Financial series analysis (series 1160)",
+            "Code": "1160",
+            "JobTitles": [
+                "Financial analyst",
+                "Supervisory financial analyst",
+                "Senior financial analyst",
+                "Loan review analyst",
+                "Capital markets policy analyst"
+            ],
+            "Description": "You will direct or do work that requires knowing and applying finance theory and principles. You should understand financial and management organization, laws and regulations and economic, accounting and legal principles. In this job series, you may work in a wide range of financial operations for government agencies.",
+            "Match": 0
+        },
+        {
+            "CodeName": "Meteorology (series 1340)",
+            "Code": "1340",
+            "JobTitles": [
+                "Meteorologist",
+                "Lead meteorologist",
+                "Supervisory meteorologist"
+            ],
+            "Description": "You will work in meteorology, studying the earth's atmosphere and processes. In this job series, you will research and analyze atmospheric conditions and weather patterns, collect and interpret meteorological data and develop new or improved methods and instruments. You need to understand meteorological methods, techniques and theory.",
+            "Match": 0
+        },
+        {
+            "CodeName": "Contracting (series 1102)",
+            "Code": "1102",
+            "JobTitles": [
+                "Contract specialist",
+                "Procurement analyst",
+                "Supervisory contract specialist",
+                "Acquisitions specialist",
+                "Negotiator"
+            ],
+            "Description": "You will help the government buy supplies, services, construction or research and development support. This includes knowing formal advertising and negotiation procedures, evaluating contract prices and managing contracts. You need to know the laws, regulations and methods used in government contracting, business and industry practices, sources of supply, cost factors and requirements.",
+            "Match": 0
+        }
+    ]
+}

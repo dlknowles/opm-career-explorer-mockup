@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Start</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/uswds/css/styles.css" />
+    <script defer src="assets/uswds/js/uswds.min.js"></script>
+</head>
+
+<body>
+    <div class="mockup-menu">
+        <button class="usa-button usa-button--base" id="menuToggle">
+            <svg class="usa-icon icon-01" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="assets/uswds/img/sprite.svg#menu"></use>
+            </svg>
+        </button>
+        <ul class="usa-list usa-list--unstyled mockup-nav hidden">
+            <li><a class="usa-link" href="intro.html">Intro</a></li>
+            <li><a class="usa-link" href="quiz.html">Quiz</a></li>
+            <li><a class="usa-link" href="results.html">Results</a></li>
+            <hr>
+            <li><a class="usa-link" id="showDiv1"><em>Start quiz</em></a></li>
+            <li><a class="usa-link" id="showDiv2"><em>In Progress</em></a></li>
+            <li><a class="usa-link" id="showDiv3"><em>Quiz Complete</em></a></li>
+        </ul>
+    </div>
+    {{> header }}
+    <main id="main">
+        <section class="vh-80 intro-page dark overlay">
+            <div>
+                <div class="grid-container intro">
+                    <div class="grid-row">
+                        <div class="desktop:grid-col-6 tablet:grid-col-8">
+                            <h1>Find your fit with the <span class="no-break">Career Explorer</span></h1>
+                            <ul class="usa-list usa-list--unstyled instructions icon-list text-xl">
+                                <li>
+                                    <svg class="usa-icon icon-01" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="assets/uswds/img/sprite.svg#interests"></use>
+                                    </svg>
+                                    <span>Get matched with careers in the federal government based on your interests.</span>
+                                </li>
+                                <li>
+                                    <svg class="usa-icon icon-02" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="assets/uswds/img/sprite.svg#task"></use>
+                                    </svg>
+                                    <span>Take a 32-question quiz that lasts 5–10 minutes.</span>
+                                </li>
+                                <li>
+                                    <svg class="usa-icon icon-03" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="assets/uswds/img/sprite.svg#psychology"></use>
+                                    </svg>
+                                    <span>Get your science-based results and explore new career opportunities.</span>
+                                </li>
+                            </ul>
+                            <div id="div1" class="grid-row grid-gap quiz-start-state">
+                                <div class="tablet:grid-col">
+                                    <div class="usa-button-group">
+                                        <a href="quiz.html" class="usa-button text-xl usa-button--accent-warm">Start the quiz</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="div2" class="grid-row grid-gap quiz-start-state">
+                                <div class="tablet:grid-col">
+                                    <p class="text-xl">You already have a quiz in progress.</p>
+                                    <div class="usa-button-group">
+                                        <a href="quiz.html" class="usa-button usa-button--outline usa-button--inverse usa-button--unstyled margin-right-2 text-xl">Restart the quiz</a>
+                                        <a href="quiz.html" class="usa-button usa-button--outline text-xl usa-button--inverse">Continue the quiz</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="div3" class="grid-row grid-gap quiz-start-state">
+                                <div class="tablet:grid-col">
+                                    <p class="text-xl">You've already completed the quiz.</p>
+                                    <div class="usa-button-group">
+                                        <a href="quiz.html" class="usa-button usa-button--outline usa-button--inverse usa-button--unstyled margin-right-2 text-xl">Restart the quiz</a>
+                                        <a href="results.html" class="usa-button usa-button--outline text-xl usa-button--inverse">Go to your results</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {{> footer }}
+</body>
+
+</html>
