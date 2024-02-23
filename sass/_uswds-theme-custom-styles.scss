@@ -20,11 +20,11 @@ i.e.
 ----------------------------------------
 */
 
-// Image path prod
-$assetPath: "/assets/uswds/img/usa-icons";
-
 // Image path dev
-//$assetPath: "../img/usa-icons";
+//$assetPath: "/assets/uswds/img/usa-icons";
+
+// Image path prod
+$assetPath: "../img/usa-icons";
 
 $border: 1px solid color("gray-20");
 
@@ -126,6 +126,7 @@ p {
 .no-break {
     white-space: nowrap;
 }
+$shadow-color: #0a1829;
 .dark {
     position: relative;
     background-color: #112a47;
@@ -140,7 +141,9 @@ p {
     span,
     li {
         color: color("white");
-        text-shadow: 2px 2px 6px rgba(#171717, 1);
+        text-shadow:
+            0px 0px 16px rgba($shadow-color, 1),
+            0px 0px 24px rgba($shadow-color, 1);
     }
     &.overlay {
         &:before {
@@ -164,7 +167,7 @@ p {
 .intro-page {
     padding: 5rem 0;
     position: relative;
-    background: url("../../bg-astro-explorer-01.jpg") no-repeat center center;
+    background: url("../../bg-explorer-01.webp") no-repeat right center;
     background-size: cover !important;
     overflow: clip;
     h1 {
@@ -186,7 +189,7 @@ p {
 .top-results {
     padding: 5rem 0;
     position: relative;
-    background: url("../../bg-astro-explorer-02.jpg") no-repeat center center;
+    background: url("../../bg-explorer-02.webp") no-repeat center center;
     background-size: cover !important;
     overflow: clip;
     .icon-item {
@@ -209,9 +212,12 @@ p {
 .restart-quiz {
     padding: 5rem 0;
     position: relative;
-    background: url("../../bg-astro-explorer-03.jpg") no-repeat center center;
+    background: url("../../bg-explorer-03.webp") no-repeat right center;
     background-size: cover !important;
     overflow: clip;
+    .grid-container {
+        max-width: 840px;
+    }
 }
 ul.icon-list {
     margin: 2rem 0;
@@ -311,19 +317,20 @@ ul.top-series-list {
         justify-content: center;
     }
     .usa-button {
-        @include at-media(tablet) {
+        margin-top: 1rem;
+        @include at-media(mobile) {
             margin-right: units(2) !important;
         }
     }
     .usa-button:last-child {
         margin-right: 0;
     }
-    .usa-button:not(:first-child) {
-        margin-top: units(2);
-        @include at-media(tablet) {
-            margin-top: 0;
-        }
-    }
+    // .usa-button:not(:first-child) {
+    //     margin-top: units(2);
+    //     @include at-media(tablet) {
+    //         margin-top: 0;
+    //     }
+    // }
     .usa-button--unstyled {
         text-align: center;
     }
