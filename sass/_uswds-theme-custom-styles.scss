@@ -81,8 +81,8 @@ p {
 $color-map: (
     "match-color-red": color("red-60v"),
     "match-color-orange": color("orange-60v"),
-    "match-color-lt-green": color("green-70v"),
-    "match-color-green": color("green-60v")
+    "match-color-lt-green": color("green-60v"),
+    "match-color-green": color("green-70v")
 );
 @mixin generate-color-classes($map) {
     @each $class, $color in $map {
@@ -167,7 +167,7 @@ $shadow-color: #0a1829;
 .intro-page {
     padding: 5rem 0;
     position: relative;
-    background: url("../../bg-explorer-01.webp") no-repeat right center;
+    //background: url("../../bg-explorer-01.webp") no-repeat right center;
     background-size: cover !important;
     overflow: clip;
     h1 {
@@ -189,7 +189,7 @@ $shadow-color: #0a1829;
 .top-results {
     padding: 5rem 0;
     position: relative;
-    background: url("../../bg-explorer-02.webp") no-repeat center center;
+    //background: url("../../bg-explorer-02.webp") no-repeat center center;
     background-size: cover !important;
     overflow: clip;
     .icon-item {
@@ -212,7 +212,7 @@ $shadow-color: #0a1829;
 .restart-quiz {
     padding: 5rem 0;
     position: relative;
-    background: url("../../bg-explorer-03.webp") no-repeat right center;
+    //background: url("../../bg-explorer-03.webp") no-repeat right center;
     background-size: cover !important;
     overflow: clip;
     .grid-container {
