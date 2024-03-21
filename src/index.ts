@@ -128,7 +128,7 @@ if (fileName === 'results.html') {
                                         <p class="match bg-blue">Based on your answers, your interests are a <strong class="match-color-${matchColor}">${matchCopy} match</strong> with this job series.</p>
                                         <p>${series.Description}</p>
                                         <div class="job-titles">
-                                            <h3 class="text-xl">Example jobs</h3>
+                                            <h3 class="text-xl">Popular job titles</h3>
                                             <ul class="usa-list">
                                             ${series.JobTitles.map((job: any, i: number) => `<li>${job}</li>`).join('')}
                                             </ul>

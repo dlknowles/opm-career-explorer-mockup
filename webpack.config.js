@@ -44,6 +44,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/results.hbs",
             filename: "./results.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/error.hbs",
+            filename: "./error.html"
         })
     ],
     output: {
